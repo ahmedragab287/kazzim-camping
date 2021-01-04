@@ -75,6 +75,7 @@ body::-webkit-scrollbar-thumb {
   padding: 0px 10px;
   font-family: "Roboto", sans-serif;
 }
+
 .header_left li a {
   transition: all 0.5s ease 0.2s;
   text-decoration: none;
@@ -82,6 +83,10 @@ body::-webkit-scrollbar-thumb {
   outline: none;
 }
 .header_left li a:hover {
+  transition: all 0.5s ease 0s;
+  color: white;
+}
+.active {
   transition: all 0.5s ease 0s;
   color: white;
 }
@@ -213,38 +218,132 @@ section .content button:hover {
 
 #destination {
   font-family: "Archivo", sans-serif;
-
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* background-color: red; */
 }
 #destinations_list {
-  padding: 5% 5%;
+  padding: 5% 5% 5% 5%;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
 #destinations_list li {
-  display: inline;
+  display: inline-table;
+  margin: 10px;
 }
 
 .destination_container {
   /* padding: 30px; */
   background-color: white;
   border-radius: 10px;
+  height: 300px;
+  width: 250px;
+  display: grid;
+  padding: 20px;
+  position: relative;
 }
 .destination_container img {
-  height: 100px;
+  height: 130px;
   border-radius: 10px;
 }
+
+.like-box {
+  background-color: white;
+  border-radius: 10px;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 30px;
+  right: 40px;
+}
+
+.like {
+  position: absolute;
+  top: 4%;
+  right: 6%;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  background: url("/assets/outline-heart.png") no-repeat;
+}
+
+.like-active {
+  background: url("/assets/full-heart.png") no-repeat;
+}
+
+.destination-price {
+  border-radius: 10px;
+  background-color: white;
+  position: absolute;
+  top: 40%;
+  left: 27%;
+  width: 120px;
+  height: 40px;
+}
+
+.destination-price h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  color: #e76f51;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  font-size: 1em;
+}
+
 .destination_container h1 {
-  font-size: 5px;
+  font-family: "Roboto", sans-serif;
+
+  padding-top: 20px;
+  font-size: 1.1em;
 }
 .destination_container p {
-  font-size: 9px;
+  font-family: "Roboto", sans-serif;
+  padding: 10px 0 20px 0;
+  font-size: 0.8em;
+  font-weight: 100;
+  color: #3b3735;
+  line-height: 1.5;
 }
+
+.destination_container button {
+  font-family: "Roboto", sans-serif;
+  padding: 10px 30px;
+  background-color: rgba(141, 141, 141, 0.1);
+  color: rgba(141, 141, 141, 0.7);
+  cursor: pointer;
+  transition: all 0.3s ease 0.2s;
+  border-radius: 50px;
+  border-color: transparent;
+  font-size: 15px;
+  font-weight: 800;
+  outline: none;
+}
+
+.destination_container button:hover {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #e76f51;
+}
+
+.btn-viewAll {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 0 0 18% 0;
+}
+
+.btn-viewAll button {
+  color: #e76f51;
+  border-radius: 50px;
+  border-color: #e76f51;
+  background-color: transparent;
+  border-style: solid;
+  width: 150px;
+  height: 40px;
+}
+
 footer {
   display: flex;
   flex-flow: row wrap;

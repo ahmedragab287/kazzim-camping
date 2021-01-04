@@ -1,223 +1,414 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Camping</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="assets/logo.png" type="image/png" sizes="16x16" />
-  </head>
 
-  <body>
-    <!-- #region home -->
-    <div id="home">
-      <!-- #region header -->
-      <div class="header">
-        <a href="#"><img class="logo" src="assets/logo.png" alt="Logo" /> </a>
-        <ul class="header_left">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#destination">Destination</a></li>
-          <li><a href="#">Near me</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact us</a></li>
-        </ul>
-        <div class="header_right">
-          <a class="btn_signUp" href="#signUp"><button>Sign up</button></a>
-          <a class="btn_signIn" href="#signIn"><button>Sign in</button></a>
-        </div>
-      </div>
-      <!-- #endregion header -->
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Camping</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="assets/logo.png" type="image/png" sizes="16x16" />
+  <!-- <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    /> -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
 
-      <!-- #region middle content -->
-      <section>
-        <div class="content">
-          <h1>
-            Find Yourself <br />
-            Outside.
-          </h1>
-          <p>
-            Book unique camping experiences on over 300,000 campsites, <br />
-            cabins, RV parks, public parks and more.
-          </p>
-          <a class="btn_discover" href="#Discover"><button>Discover</button></a>
-        </div>
-      </section>
-      <!-- #endregion middle content -->
-
-      <!-- #region services list -->
-      <div class="services">
-        <ul>
-          <li>
-            <a href="#">
-              <div class="service_container">
-                <img class="service_img" src="assets/bonfire.png" alt="" />
-                <h4 class="test">Camping & Day Use</h4>
-                <p>
-                  Return to your favorite spot or discover a new one that’s
-                  right.
-                </p>
-              </div>
-            </a>
-          </li>
-
-          <li>
-            <a href="#">
-              <div class="service_container">
-                <img class="service_img" src="assets/tickets.png" alt="" />
-                <h4 class="test">Tours & Tickets</h4>
-                <p>Reserve tours and tickets to participate in events.</p>
-              </div>
-            </a>
-          </li>
-
-          <li>
-            <a href="#">
-              <div class="service_container">
-                <img class="service_img" src="assets/filled.png" alt="" />
-                <h4 class="test">Permits</h4>
-                <p>Obtain permits for access to high-demand locations.</p>
-              </div>
-            </a>
-          </li>
-
-          <li>
-            <a href="#">
-              <div class="service_container">
-                <img class="service_img" src="assets/fishing.png" alt="" />
-                <h4 class="test">Recreation Activities</h4>
-                <p>
-                  Find the best spots for hunting, fishing & recreational
-                  shooting.
-                </p>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!-- #endregion services list-->
-    </div>
-    <!-- #endregion home -->
-
-    <div id="divider"></div>
-
-    <!-- #region destinations -->
-    <div id="destination">
-      <img src="assets/destinations.png" alt="" />
-      <h1>
-        Explore Destinations <br />
-        & Activities
-      </h1>
-
-      <div id="destinations_list">
-        <ul>
-          <li class="destination_container">
-            <img src="assets/destinations/destination1.png" alt="" />
-            <h1>Trickle Creek Ranch</h1>
-            <p>Book unique camping experiences on over 300,000 campsites.</p>
-            <a href=""><button>Read More</button></a>
-          </li>
-        </ul>
+<body>
+  <!-- #region home -->
+  <div id="home">
+    <!-- #region header -->
+    <div class="header">
+      <a href="#"><img class="logo" src="assets/logo.png" alt="Logo" /> </a>
+      <ul class="header_left">
+        <li><a class="item active" href="#home">Home</a></li>
+        <li><a class="item" href="#destination">Destination</a></li>
+        <li><a class="item" href="#">Near me</a></li>
+        <li><a class="item" href="#">Events</a></li>
+        <li><a class="item" href="#">Blog</a></li>
+        <li><a class="item" href="#">Gallery</a></l i>
+        <li><a class="item" href="#">About</a></li>
+        <li><a class="item" href="#">Contact us</a></li>
+      </ul>
+      
+      <div class="header_right">
+        <a class="btn_signUp" href="#signUp"><button>Sign up</button></a>
+        <a class="btn_signIn" href="#signIn"><button>Sign in</button></a>
       </div>
     </div>
-    <!-- #endregion destinations -->
-
-    <!-- #region footer -->
-    <footer class="footer">
-      <div class="footer__addr">
-        <h1>Hipcamp is everywhere you want to camp.</h1>
-
+    <!-- #endregion header -->
+    <!-- #region middle content -->
+    <section>
+      <div class="content">
+        <h1>
+          Find Yourself <br />
+          Outside.
+        </h1>
         <p>
-          Discover unique experiences on ranches, nature preserves, farms,
-          vineyards, and public campgrounds across the U.S. Book tent camping,
-          treehouses, cabins, yurts, primitive backcountry sites, car camping,
-          airstreams, tiny houses, RV camping, glamping tents and more.
+          Book unique camping experiences on over 300,000 campsites, <br />
+          cabins, RV parks, public parks and more.
         </p>
-
-        <h1>Download Our App</h1>
-        <a href="#"><img src="assets/app-store-badge.png" alt="" /></a>
-        <a href="#"><img src="assets/google-play-badge.png" alt="" /></a>
+        <a class="btn_discover" href="#Discover"><button>Discover</button></a>
       </div>
+    </section>
+    <!-- #endregion middle content -->
 
-      <ul class="footer__nav">
-        <li class="nav__item">
-          <h2 class="nav__title">Get to Know Us</h2>
-
-          <ul class="nav__ul">
-            <li>
-              <a href="#">About Us </a>
-            </li>
-
-            <li>
-              <a href="#">Rules & Reservation Policies </a>
-            </li>
-
-            <li>
-              <a href="#">Accessibility </a>
-            </li>
-            <li>
-              <a href="#">Media Center </a>
-            </li>
-            <li>
-              <a href="#">Site Map </a>
-            </li>
-          </ul>
+    <!-- #region services list -->
+    <div class="services">
+      <ul>
+        <li>
+          <a href="#">
+            <div class="service_container">
+              <img class="service_img" src="assets/bonfire.png" alt="" />
+              <h4 class="test">Camping & Day Use</h4>
+              <p>
+                Return to your favorite spot or discover a new one that’s
+                right.
+              </p>
+            </div>
+          </a>
         </li>
 
-        <li class="nav__item">
-          <h2 class="nav__title">Plan with Us</h2>
-
-          <ul class="nav__ul nav__ul--extra">
-            <li>
-              <a href="#">Find Trip Inspiration </a>
-            </li>
-
-            <li>
-              <a href="#">Build a Trip </a>
-            </li>
-
-            <li>
-              <a href="#">Buy a Pass</a>
-            </li>
-            <li>
-              <a href="#">Enter a Lottery</a>
-            </li>
-          </ul>
+        <li>
+          <a href="#">
+            <div class="service_container">
+              <img class="service_img" src="assets/tickets.png" alt="" />
+              <h4 class="test">Tours & Tickets</h4>
+              <p>Reserve tours and tickets to participate in events.</p>
+            </div>
+          </a>
         </li>
 
-        <li class="nav__item">
-          <h2 class="nav__title">Let Us Help You</h2>
+        <li>
+          <a href="#">
+            <div class="service_container">
+              <img class="service_img" src="assets/filled.png" alt="" />
+              <h4 class="test">Permits</h4>
+              <p>Obtain permits for access to high-demand locations.</p>
+            </div>
+          </a>
+        </li>
 
-          <ul class="nav__ul">
-            <li>
-              <a href="#">Your Account </a>
-            </li>
-
-            <li>
-              <a href="#">Your Reservations </a>
-            </li>
-
-            <li>
-              <a href="#">Contact Us</a>
-            </li>
-            <li>
-              <a href="#">Help Center </a>
-            </li>
-            <li>
-              <a href="#">Submit Feedback</a>
-            </li>
-          </ul>
+        <li>
+          <a href="#">
+            <div class="service_container">
+              <img class="service_img" src="assets/fishing.png" alt="" />
+              <h4 class="test">Recreation Activities</h4>
+              <p>
+                Find the best spots for hunting, fishing & recreational
+                shooting.
+              </p>
+            </div>
+          </a>
         </li>
       </ul>
+    </div>
+    <!-- #endregion services list-->
+  </div>
+  <!-- #endregion home -->
 
-      <div class="legal">
-        <span>Made with <span class="heart">♥</span> by MET Students</span>
-      </div>
-    </footer>
-    <!-- #endregion footer -->
-  </body>
+  <div id="divider"></div>
+
+  <!-- #region destinations -->
+  <div id="destination">
+    <img src="assets/destinations.png" alt="" />
+    <h1>
+      Explore Destinations <br />
+      & Activities
+    </h1>
+
+    <div id="destinations_list">
+      <ul>
+        <script>
+          $(document).ready(function () {
+            $(".like").click(function () {
+              $(".like").toggleClass("like-active");
+            });
+          });
+        </script>
+
+
+        <li class="destination_container">
+          <img src="assets/destinations/destination1.png" alt="" />
+          <h1>Trickle Creek Ranch</h1>
+          <p>Book unique camping experiences on over 300,000 campsites.</p>
+          <a href="#"><button>Read More</button></a>
+          <div class="like-box">
+            <div class="like"></div>
+          </div>
+          <div class="destination-price">
+            <h3>$36/night</h3>
+          </div>
+        </li>
+
+
+
+        <li class="destination_container">
+          <img src="assets/destinations/destination2.png" alt="" />
+          <h1>Trickle Creek Ranch</h1>
+          <p>Book unique camping experiences on over 300,000 campsites.</p>
+          <a href="#"><button>Read More</button></a>
+          <div class="like-box">
+            <div class="like"></div>
+          </div>
+          <div class="destination-price">
+            <h3>$36/night</h3>
+          </div>
+        </li>
+
+
+
+        <li class="destination_container">
+          <img src="assets/destinations/destination3.png" alt="" />
+          <h1>Trickle Creek Ranch</h1>
+          <p>Book unique camping experiences on over 300,000 campsites.</p>
+          <a href="#"><button>Read More</button></a>
+          <div class="like-box">
+            <div class="like"></div>
+          </div>
+          <div class="destination-price">
+            <h3>$36/night</h3>
+          </div>
+        </li>
+
+
+
+        <li class="destination_container">
+          <img src="assets/destinations/destination4.png" alt="" />
+          <h1>Trickle Creek Ranch</h1>
+          <p>Book unique camping experiences on over 300,000 campsites.</p>
+          <a href="#"><button>Read More</button></a>
+          <div class="like-box">
+            <div class="like"></div>
+          </div>
+          <div class="destination-price">
+            <h3>$36/night</h3>
+          </div>
+        </li>
+
+
+
+        <li class="destination_container">
+          <img src="assets/destinations/destination5.png" alt="" />
+          <h1>Trickle Creek Ranch</h1>
+          <p>Book unique camping experiences on over 300,000 campsites.</p>
+          <a href="#"><button>Read More</button></a>
+          <div class="like-box">
+            <div class="like"></div>
+          </div>
+          <div class="destination-price">
+            <h3>$36/night</h3>
+          </div>
+        </li>
+
+
+
+        <li class="destination_container">
+          <img src="assets/destinations/destination6.png" alt="" />
+          <h1>Trickle Creek Ranch</h1>
+          <p>Book unique camping experiences on over 300,000 campsites.</p>
+          <a href="#"><button>Read More</button></a>
+          <div class="like-box">
+            <div class="like"></div>
+          </div>
+          <div class="destination-price">
+            <h3>$36/night</h3>
+          </div>
+        </li>
+
+
+
+        <li class="destination_container">
+          <img src="assets/destinations/destination7.png" alt="" />
+          <h1>Trickle Creek Ranch</h1>
+          <p>Book unique camping experiences on over 300,000 campsites.</p>
+          <a href="#"><button>Read More</button></a>
+          <div class="like-box">
+            <div class="like"></div>
+          </div>
+          <div class="destination-price">
+            <h3>$36/night</h3>
+          </div>
+        </li>
+
+
+
+        <li class="destination_container">
+          <img src="assets/destinations/destination8.png" alt="" />
+          <h1>Trickle Creek Ranch</h1>
+          <p>Book unique camping experiences on over 300,000 campsites.</p>
+          <a href="#"><button>Read More</button></a>
+          <div class="like-box">
+            <div class="like"></div>
+          </div>
+          <div class="destination-price">
+            <h3>$36/night</h3>
+          </div>
+        </li>
+
+
+
+        <li class="destination_container">
+          <img src="assets/destinations/destination9.png" alt="" />
+          <h1>Trickle Creek Ranch</h1>
+          <p>Book unique camping experiences on over 300,000 campsites.</p>
+          <a href="#"><button>Read More</button></a>
+          <div class="like-box">
+            <div class="like"></div>
+          </div>
+          <div class="destination-price">
+            <h3>$36/night</h3>
+          </div>
+        </li>
+
+
+
+        <li class="destination_container">
+          <img src="assets/destinations/destination10.png" alt="" />
+          <h1>Trickle Creek Ranch</h1>
+          <p>Book unique camping experiences on over 300,000 campsites.</p>
+          <a href="#"><button>Read More</button></a>
+          <div class="like-box">
+            <div class="like"></div>
+          </div>
+          <div class="destination-price">
+            <h3>$36/night</h3>
+          </div>
+        </li>
+
+
+
+        <li class="destination_container">
+          <img src="assets/destinations/destination11.png" alt="" />
+          <h1>Trickle Creek Ranch</h1>
+          <p>Book unique camping experiences on over 300,000 campsites.</p>
+          <a href="#"><button>Read More</button></a>
+          <div class="like-box">
+            <div class="like"></div>
+          </div>
+          <div class="destination-price">
+            <h3>$36/night</h3>
+          </div>
+        </li>
+
+
+
+        <li class="destination_container">
+          <img src="assets/destinations/destination12.png" alt="" />
+          <h1>Trickle Creek Ranch</h1>
+          <p>Book unique camping experiences on over 300,000 campsites.</p>
+          <a href="#"><button>Read More</button></a>
+          <div class="like-box">
+            <div class="like"></div>
+          </div>
+          <div class="destination-price">
+            <h3>$36/night</h3>
+          </div>
+        </li>
+
+
+      </ul>
+    </div>
+  </div>
+  <!-- #endregion destinations -->
+
+  <div class="btn-viewAll"> <a href=""><button class="view-all">View All</button></a>
+  </div>
+  <!-- #region footer -->
+  <footer class="footer">
+    <div class="footer__addr">
+      <h1>Hipcamp is everywhere you want to camp.</h1>
+
+      <p>
+        Discover unique experiences on ranches, nature preserves, farms,
+        vineyards, and public campgrounds across the U.S. Book tent camping,
+        treehouses, cabins, yurts, primitive backcountry sites, car camping,
+        airstreams, tiny houses, RV camping, glamping tents and more.
+      </p>
+
+      <h1>Download Our App</h1>
+      <a href="#"><img src="assets/app-store-badge.png" alt="" /></a>
+      <a href="#"><img src="assets/google-play-badge.png" alt="" /></a>
+    </div>
+
+    <ul class="footer__nav">
+      <li class="nav__item">
+        <h2 class="nav__title">Get to Know Us</h2>
+
+        <ul class="nav__ul">
+          <li>
+            <a href="#">About Us </a>
+          </li>
+
+          <li>
+            <a href="#">Rules & Reservation Policies </a>
+          </li>
+
+          <li>
+            <a href="#">Accessibility </a>
+          </li>
+          <li>
+            <a href="#">Media Center </a>
+          </li>
+          <li>
+            <a href="#">Site Map </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="nav__item">
+        <h2 class="nav__title">Plan with Us</h2>
+
+        <ul class="nav__ul nav__ul--extra">
+          <li>
+            <a href="#">Find Trip Inspiration </a>
+          </li>
+
+          <li>
+            <a href="#">Build a Trip </a>
+          </li>
+
+          <li>
+            <a href="#">Buy a Pass</a>
+          </li>
+          <li>
+            <a href="#">Enter a Lottery</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="nav__item">
+        <h2 class="nav__title">Let Us Help You</h2>
+
+        <ul class="nav__ul">
+          <li>
+            <a href="#">Your Account </a>
+          </li>
+
+          <li>
+            <a href="#">Your Reservations </a>
+          </li>
+
+          <li>
+            <a href="#">Contact Us</a>
+          </li>
+          <li>
+            <a href="#">Help Center </a>
+          </li>
+          <li>
+            <a href="#">Submit Feedback</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="legal">
+      <span>Made with <span class="heart">♥</span> by Ahmed Ragab</span>
+    </div>
+  </footer>
+  <!-- #endregion footer -->
+</body>
+
 </html>
