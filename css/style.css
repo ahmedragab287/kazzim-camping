@@ -404,8 +404,8 @@ footer {
 }
 
 .footer__addr {
-  margin-right: 8em;
-  margin-bottom: 4em;
+  margin-right: 5em;
+  margin-bottom: 0em;
 }
 
 .footer__addr h1 {
@@ -413,6 +413,7 @@ footer {
   font-weight: 900;
   font-size: 1.2rem;
   margin-bottom: 1em;
+  line-height: 1.5em;
 }
 
 .footer__addr p {
@@ -461,10 +462,10 @@ footer {
   color: rgb(231, 111, 81);
 }
 .legal {
+  background-color: rgb(248, 225, 219);
   text-align: center;
-  padding-bottom: 2em;
+  padding: 2em 0 1.5em 0;
 }
-
 .heart {
   color: rgb(231, 111, 81);
 }
