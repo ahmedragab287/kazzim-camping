@@ -221,6 +221,7 @@ section .content button:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-top: 5%;
 }
 #destinations_list {
   padding: 5% 5% 5% 5%;
@@ -342,6 +343,52 @@ section .content button:hover {
   border-style: solid;
   width: 150px;
   height: 40px;
+}
+
+.btn-viewAll button:hover {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #e76f51;
+}
+
+.subscribe {
+  background-color: #f8e1db;
+  height: 250px;
+  margin: 0 10% 10% 10%;
+  border-radius: 10px;
+  position: relative;
+}
+.subscribe-background {
+  height: 100%;
+  width: 50%;
+}
+
+.subscribe-img {
+  height: 90%;
+  position: absolute;
+  top: 5%;
+  right: 10%;
+}
+
+.subscribe h1 {
+  font-family: "Archivo", sans-serif;
+  font-size: 2em;
+  font-weight: 900;
+  position: absolute;
+  top: 23%;
+  left: 5%;
+}
+
+.subP {
+  width: 40%;
+  position: absolute;
+  top: 40%;
+  left: 5%;
+}
+.subP p {
+  font-family: "Archivo", sans-serif;
+  font-size: 0.8em;
+  letter-spacing: 0.05em;
+  line-height: 2em;
 }
 
 footer {
