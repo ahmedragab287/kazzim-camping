@@ -180,7 +180,7 @@ section .content button:hover {
   color: rgb(59, 55, 53);
 }
 .services li {
-  display: inline-block;
+  display: inline-table;
 }
 .service_container {
   margin: 20px 10px;
