@@ -397,10 +397,27 @@ footer {
   padding: 6em 0em 1em 5em;
   background-color: rgb(248, 225, 219);
   border-radius: 100px 100px 0 0;
+  position: relative;
 }
 
 .footer > * {
   flex: 1 100%;
+}
+
+.home-button {
+  background-color: white;
+  box-shadow: 5px 10px 30px 0 rgba(59, 55, 53, 0.05);
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  position: absolute;
+  right: 10%;
+  top: -25px;
+}
+.home-button img {
+  position: absolute;
+  right: 32%;
+  top: 25%;
 }
 
 .footer__addr {
@@ -481,6 +498,9 @@ footer {
 
   .footer__addr {
     margin-right: 0em;
+  }
+  .home-button {
+    right: 44%;
   }
 }
 @media screen and (min-width: 40.375em) {
